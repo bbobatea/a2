@@ -20,6 +20,7 @@ function parseTweets(runkeeper_tweets) {
 
 		return new Tweet(tweet.text, tweet.created_at);
 	});
+	console.log("hello world");
 
 	tweet_array.sort(function(a,b) {
 		const sorting = new Date(a.created_at) - new Date(b.created_at);
